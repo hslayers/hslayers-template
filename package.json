@@ -1,0 +1,39 @@
+{
+  "name": "hslayers-app",
+  "version": "0.1.0",
+  "description": "HSLayers-NG application",
+  "main": "build/index.html",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "ng": "ng",
+    "build": "ng build --configuration production",
+    "dev": "ng serve --configuration production --disable-host-check",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jmacura/template-hslayers.git"
+  },
+  "keywords": [
+    "map",
+    "hslayers-ng"
+  ],
+  "author": "Plan4All",
+  "license": "MPL",
+  "bugs": {
+    "url": "https://github.com/jmacura/template-hslayers/issues"
+  },
+  "homepage": "https://github.com/jmacura/template-hslayers/README.md",
+  "dependencies": {
+    "hslayers-ng": "^6.1.0"
+  },
+  "devDependencies": {
+    "@angular-builders/custom-webpack": "^12.1.3",
+    "@angular-devkit/build-angular": "^12.2.13",
+    "@angular/cli": "^12.2.13",
+    "@types/karma-jasmine": "^4.0.2",
+    "karma-jasmine": "^4.0.1"
+  }
+}
