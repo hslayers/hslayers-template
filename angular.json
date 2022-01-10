@@ -50,7 +50,8 @@
               }
             ],
             "styles": [
-              "./node_modules/hslayers-ng/css/hslayers-ng.css"
+              "./node_modules/hslayers-ng/css/hslayers-ng.css",
+              "./src/styles.scss"
             ],
             "scripts": [],
             "customWebpackConfig": {

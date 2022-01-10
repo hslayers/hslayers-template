@@ -13,15 +13,15 @@ import {
 @Component({
   selector: 'application-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.sass'],
+  styleUrls: ['./app.component.scss'],
 })
 export class HslayersAppComponent {
   /* You can name your app as you like or not at all */
   title = 'hslayers-application';
   constructor(
     /* Inject here all modules from HSLayers-NG which you intend to use */
-    public hsConfig: HsConfig,
-    private hsEventBusService: HsEventBusService,
+    public hsConfig: HsConfig, /* public properties are visible in the template */
+    private hsEventBusService: HsEventBusService, /* private properties are only visible from within this component class */
     private hsToastService: HsToastService,
   ) {
     /* Define a geometry of one square polygon */
