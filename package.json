@@ -21,13 +21,13 @@
     "hslayers-ng"
   ],
   "author": "Plan4All",
-  "license": "MPL",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/jmacura/template-hslayers/issues"
   },
   "homepage": "https://github.com/jmacura/template-hslayers/README.md",
   "dependencies": {
-    "hslayers-ng": "^6.1.0"
+    "hslayers-ng": "^7.0.3"
   },
   "devDependencies": {
     "@angular-builders/custom-webpack": "^12.1.3",

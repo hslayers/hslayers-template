@@ -49,7 +49,9 @@
                 "output": "./assets"
               }
             ],
-            "styles": [],
+            "styles": [
+              "./node_modules/hslayers-ng/css/hslayers-ng.css"
+            ],
             "scripts": [],
             "customWebpackConfig": {
               "path": "custom-webpack.config.js"
