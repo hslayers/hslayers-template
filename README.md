@@ -1,11 +1,11 @@
-# template-hslayers
+# hslayers-template
 
-This is a project template for [HSLayers-NG](https://ng.hslayers.org/) "full" apps. It lives at https://github.com/jmacura/template-hslayers.
+This is a project template for [HSLayers-NG](https://ng.hslayers.org/) "full-featured" apps. It lives at https://github.com/hslayers/hslayers-template.
 
 To create a new project based on this template use degit:
 
 ```
-npx degit jmacura/template-hslayers hslayers-app
+npx degit hslayers/hslayers-template hslayers-app
 cd hslayers-app
 ```
 
