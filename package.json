@@ -27,7 +27,7 @@
   },
   "homepage": "https://github.com/jmacura/template-hslayers/README.md",
   "dependencies": {
-    "hslayers-ng": "^8.0.0"
+    "hslayers-ng": "^8.1.0"
   },
   "devDependencies": {
     "@angular-builders/custom-webpack": "^13.1.0",
