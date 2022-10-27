@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jmacura/template-hslayers.git"
+    "url": "git+https://github.com/hslayers/hslayers-template.git"
   },
   "keywords": [
     "map",
@@ -23,16 +23,16 @@
   "author": "Plan4All",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jmacura/template-hslayers/issues"
+    "url": "https://github.com/hslayers/hslayers-template/issues"
   },
-  "homepage": "https://github.com/jmacura/template-hslayers/README.md",
+  "homepage": "https://github.com/hslayers/hslayers-template/README.md",
   "dependencies": {
-    "hslayers-ng": "^8.1.0"
+    "hslayers-ng": "^9.3.0"
   },
   "devDependencies": {
     "@angular-builders/custom-webpack": "^13.1.0",
-    "@angular-devkit/build-angular": "^13.2.5",
-    "@angular/cli": "^13.2.5",
+    "@angular-devkit/build-angular": "^13.3.9",
+    "@angular/cli": "^13.3.9",
     "@types/karma-jasmine": "^4.0.2",
     "karma-jasmine": "^4.0.1"
   }
