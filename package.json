@@ -9,7 +9,7 @@
   "scripts": {
     "ng": "ng",
     "build": "ng build --configuration production",
-    "dev": "ng serve --configuration production --disable-host-check",
+    "dev": "ng serve --disable-host-check",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

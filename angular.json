@@ -7,7 +7,7 @@
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
-          "style": "sass"
+          "style": "scss"
         }
       },
       "root": "",
@@ -18,25 +18,12 @@
           "builder": "@angular-builders/custom-webpack:browser",
           "options": {
             "sourceMap": true,
-            "vendorChunk": true,
-            "optimization": false,
             "outputPath": "build",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
             "preserveSymlinks": true,
-            "allowedCommonJsDependencies": [
-              "xml-utils/find-tags-by-name",
-              "lru-cache",
-              "pbf",
-              "queue",
-              "xml-js",
-              "geostyler-legend",
-              "ol-popup",
-              "geostyler-openlayers-parser",
-              "geostyler-sld-parser"
-            ],
             "assets": [
               {
                 "glob": "**/*",
@@ -55,10 +42,18 @@
             ],
             "scripts": [],
             "customWebpackConfig": {
-              "path": "custom-webpack.config.js"
+              "path": "webpack.config.js"
             }
           },
           "configurations": {
+            "development": {
+              "buildOptimizer": false,
+              "optimization": false,
+              "vendorChunk": true,
+              "extractLicenses": false,
+              "sourceMap": true,
+              "namedChunks": true
+            },
             "production": {
               "fileReplacements": [
                 {
@@ -68,15 +63,15 @@
               ],
               "optimization": true,
               "outputHashing": "all",
-              "sourceMap": true,
               "namedChunks": false,
+              "statsJson": true,
               "extractLicenses": true,
-              "vendorChunk": true,
+              "vendorChunk": false,
               "buildOptimizer": true,
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "2mb",
+                  "maximumWarning": "3mb",
                   "maximumError": "5mb"
                 },
                 {
@@ -86,14 +81,19 @@
                 }
               ]
             }
-          }
+          },
+          "defaultConfiguration": "production"
         },
         "serve": {
+          "defaultConfiguration": "development",
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
             "browserTarget": "hslayers-app:build"
           },
           "configurations": {
+            "development": {
+              "browserTarget": "hslayers-app:build:development"
+            },
             "production": {
               "browserTarget": "hslayers-app:build:production"
             }
