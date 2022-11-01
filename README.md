@@ -22,7 +22,7 @@ Install the dependencies...
 npm install
 ```
 
-*Note that if you have npm < 7 you need to intall peer-dependencies manually.*
+*Note that if you have npm < 7 you need to install peer-dependencies manually.*
 
 ...then start Angular dev server:
 
