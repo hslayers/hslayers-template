@@ -27,12 +27,12 @@
   },
   "homepage": "https://github.com/hslayers/hslayers-template/README.md",
   "dependencies": {
-    "hslayers-ng": "^11.0.0"
+    "hslayers-ng": "^12.0.0"
   },
   "devDependencies": {
-    "@angular-builders/custom-webpack": "^15.0.0",
-    "@angular-devkit/build-angular": "^15.2.0",
-    "@angular/cli": "^15.2.0",
+    "@angular-builders/custom-webpack": "^16.0.0",
+    "@angular-devkit/build-angular": "^16.2.0",
+    "@angular/cli": "^16.2.0",
     "@types/karma-jasmine": "^4.0.2",
     "karma-jasmine": "^5.1.0"
   },
