@@ -152,7 +152,7 @@ export class HslayersAppComponent {
           },
           source: new VectorSource({
             features: new GeoJSON().readFeatures(geojsonObject),
-          }),
+          }) as VectorSource, //This type-casting hack shall not be necessary after OL > 8.2.0 is released
         }),
       ],
     });
