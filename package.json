@@ -27,7 +27,7 @@
   },
   "homepage": "https://github.com/hslayers/hslayers-template/README.md",
   "dependencies": {
-    "hslayers-ng": "^13.1.0"
+    "hslayers-ng": "^13.2.1"
   },
   "devDependencies": {
     "@angular-builders/custom-webpack": "^17.0.0",
