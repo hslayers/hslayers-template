@@ -1,27 +1,28 @@
-import {Component} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 import {GeoJSON} from 'ol/format';
 import {OSM, Vector as VectorSource} from 'ol/source';
 import {Tile, Vector as VectorLayer} from 'ol/layer';
 
-import {
-  HsConfig,
-  HsEventBusService,
-  HsToastService
-} from 'hslayers-ng';
+import {HsConfig} from 'hslayers-ng/config';
+import {HsEventBusService} from 'hslayers-ng/services/event-bus';
+import {HsOverlayConstructorService, HsPanelConstructorService} from 'hslayers-ng/services/panel-constructor';
+import {HsToastService} from 'hslayers-ng/common/toast';
 
 @Component({
   selector: 'application-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
 })
-export class HslayersAppComponent {
+export class HslayersAppComponent implements OnInit {
   /* You can name your app as you like or not at all */
   title = 'hslayers-application';
   constructor(
     /* Inject here all modules from HSLayers-NG which you intend to use */
     public hsConfig: HsConfig, /* public properties are visible in the template */
     private hsEventBusService: HsEventBusService, /* private properties are only visible from within this component class */
+    private hsOverlayConstructorService: HsOverlayConstructorService,
+    private hsPanelConstructorService: HsPanelConstructorService,
     private hsToastService: HsToastService,
   ) {
     /* Define a geometry of one square polygon */
@@ -167,5 +168,20 @@ export class HslayersAppComponent {
         }
       );
     })
+  }
+
+  /**
+   * Mandatory method calls so the GUI is properly set up
+   */
+  ngOnInit(){
+    /**
+     * Create panel components
+     */
+    this.hsPanelConstructorService.createActivePanels();
+
+    /**
+     * Create GUI overlay (toolbar, basemapGallery, toastMessages, ...)
+     */
+    this.hsOverlayConstructorService.createGuiOverlay();
   }
 }
