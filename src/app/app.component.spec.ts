@@ -1,4 +1,4 @@
-import {HsConfig} from 'hslayers-ng';
+import {HsConfig} from 'hslayers-ng/config';
 import {HslayersAppComponent} from './app.component';
 import {TestBed, waitForAsync} from '@angular/core/testing';
 class HsConfigMock {

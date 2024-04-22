@@ -88,21 +88,21 @@
           "defaultConfiguration": "development",
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "hslayers-app:build"
+            "buildTarget": "hslayers-app:build"
           },
           "configurations": {
             "development": {
-              "browserTarget": "hslayers-app:build:development"
+              "buildTarget": "hslayers-app:build:development"
             },
             "production": {
-              "browserTarget": "hslayers-app:build:production"
+              "buildTarget": "hslayers-app:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "hslayers-app:build"
+            "buildTarget": "hslayers-app:build"
           }
         },
         "test": {
@@ -135,7 +135,6 @@
       }
     }
   },
-  "defaultProject": "hslayers-app",
   "cli": {
     "analytics": false
   }
