@@ -8,7 +8,7 @@
     "esModuleInterop": true,
     "experimentalDecorators": true,
     "importHelpers": true,
-    "lib": ["es2018", "dom"],
+    "lib": ["ES2023", "dom"],
     "module": "es2020",
     "moduleResolution": "node",
     "outDir": "./dist/out-tsc",
