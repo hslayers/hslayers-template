@@ -2,7 +2,7 @@ import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
 
 import {HslayersAppComponent} from './app.component';
-import {HslayersModule} from 'hslayers-ng';
+import {HslayersModule} from 'hslayers-ng/core';
 
 @NgModule({
   declarations: [HslayersAppComponent],

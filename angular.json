@@ -32,7 +32,7 @@
               },
               {
                 "glob": "**/*",
-                "input": "./node_modules/hslayers-ng/src/assets",
+                "input": "./node_modules/hslayers-ng/assets",
                 "output": "./assets"
               }
             ],
