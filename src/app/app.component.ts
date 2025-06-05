@@ -1,4 +1,5 @@
 import {Component, OnInit} from '@angular/core';
+import {CommonModule} from '@angular/common';
 
 import {GeoJSON} from 'ol/format';
 import {OSM, Vector as VectorSource} from 'ol/source';
@@ -6,11 +7,13 @@ import {Tile, Vector as VectorLayer} from 'ol/layer';
 
 import {HsConfig} from 'hslayers-ng/config';
 import {HsEventBusService} from 'hslayers-ng/services/event-bus';
+import {HslayersModule} from 'hslayers-ng/core';
 import {HsOverlayConstructorService, HsPanelConstructorService} from 'hslayers-ng/services/panel-constructor';
 import {HsToastService} from 'hslayers-ng/common/toast';
 
 @Component({
   selector: 'application-root',
+  imports: [CommonModule, HslayersModule],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
 })
@@ -164,7 +167,7 @@ export class HslayersAppComponent implements OnInit {
         'READY!',
         'Your map is now ready to use.',
         {
-          toastStyleClasses: 'bg-success text-white' /* Use any Bootstrap class here, see https://getbootstrap.com/docs/4.0/utilities/colors/ */
+          type: 'success' /* Use 'success', 'danger', 'warning' or 'info' here */
         }
       );
     })
